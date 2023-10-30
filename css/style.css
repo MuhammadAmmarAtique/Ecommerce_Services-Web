@@ -1,0 +1,11 @@
+/* moving herosection right side in center for lg,xl and xxl screens */
+
+@media (min-width: 992px) {
+    #herosection_rightside{
+      max-width: 40%;
+      margin: auto;
+    }
+  }
+
+
+
