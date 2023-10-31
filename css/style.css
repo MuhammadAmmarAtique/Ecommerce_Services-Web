@@ -1,28 +1,66 @@
-#herosection_rightside_img{
- width: 60%;
+/* CSS Boiler plate */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+ }
+html , body
+{ 
+height: 100%;
+width: 100%;
 }
 
-/* making herosection right side img larger for smaller screens(xsm,sm,md) */
-  @media (max-width: 992px) {
-    #herosection_rightside_img{
-     width: 100%;
+:root{
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary:#1c1c1c;
+  --bs-main-color:#fff;
+  --bs-primary-color:#c6c6c6;
+  --secondary-color: #29a9fd;
+  --bs-supporting-color: #C850C0;
+}
 
-    }
-  }
-
-/* moving herosection left side in center for lg,xl and xxl screens */
-@media (min-width: 992px) {
-    #herosection_leftside{
-      max-width: 40%;
-      margin: auto;
-    }
-  }
+h1, h2,h3,h4,h5{
+  font-family: 'Lexend Deca', sans-serif;
+  color: var( --bs-dark-color);
+}
 
 
-/* making herosection left side-h1 big in size for smaller screens  */
-  @media (max-width: 576px) {
-    #herosection_leftside h1{
-     font-size: 2.7rem;
+h1{
+  font-size: 3.5rem;
+}
 
-    }
-  }
+h2{
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var( --bs-dark-color);
+  letter-spacing: 0.07rem;
+  line-height: 1.55rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+#herosection_rightside_img{
+  width: 60%;
+ }
+ 
+ /* making herosection right side img larger for smaller screens(xsm,sm,md) */
+   @media (max-width: 992px) {
+     #herosection_rightside_img{
+      width: 100%;
+    }}
+
