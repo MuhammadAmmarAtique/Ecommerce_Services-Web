@@ -1,4 +1,4 @@
-/* CSS Boiler plate */
+/* Default styling for full website */
 *{
     margin: 0;
     padding: 0;
@@ -53,10 +53,76 @@ li{
   list-style-type: none;
 }
 
+/* 1. navbar */
+.bg-color{
+  background-color: var(--bs-dark-primary);
+}
 
+.navbar-brand
+{
+  color:var(--bs-main-color);
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link.active{
+  color:var(--bs-main-color);
+}
+
+.navbar-nav .nav-link.active:hover{
+  color:var(--secondary-color);
+}
+
+.navbar-toggler
+{
+  color: white;
+}
+
+
+/* Hero Section */
+.hero-section
+{
+  color: var(--bs-main-color);
+}
 #herosection_rightside_img{
   width: 60%;
  }
+
+.herosection-h1color
+{
+  color: var(--bs-main-color);
+
+}
+.herosection-pcolor
+{
+  color: var(--bs-primary-color);
+
+}
+
+/* Custom shape in the end of hero section */
+.custom-shape-divider-bottom-1698767906 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698767906 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 79px;
+}
+
+.custom-shape-divider-bottom-1698767906 .shape-fill {
+  fill: #FFFFFF;
+}
+/*  */
  
  /* making herosection right side img larger for smaller screens(xsm,sm,md) */
    @media (max-width: 992px) {
@@ -64,3 +130,13 @@ li{
       width: 100%;
     }}
 
+    /*making herosection responsive  */
+    .hero-section{
+      height: 90vh;
+    }
+
+  @media (max-width: 767px) {
+    .hero-section{
+      height: auto;
+    }
+  }
