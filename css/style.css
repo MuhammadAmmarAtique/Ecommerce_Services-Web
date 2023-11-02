@@ -9,6 +9,7 @@ html , body
 { 
 height: 100%;
 width: 100%;
+scroll-behavior: smooth;
 }
 
 :root{
@@ -81,10 +82,18 @@ li{
 }
 
 
-/* Hero Section */
+/* 2. Hero Section */
+.herosection-height{
+  height: calc( 100vh - 3.2rem);
+}
+
+
+
 .hero-section
 {
   color: var(--bs-main-color);
+  border-bottom: 1px solid rgb(92, 92, 92);
+
 }
 #herosection_rightside_img{
   width: 60%;
@@ -95,48 +104,150 @@ li{
   color: var(--bs-main-color);
 
 }
+
+.herosection-h1:hover
+{
+  color: var(--secondary-color);
+}
+
 .herosection-pcolor
 {
   color: var(--bs-primary-color);
 
 }
 
-/* Custom shape in the end of hero section */
-.custom-shape-divider-bottom-1698767906 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1698767906 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 79px;
-}
-
-.custom-shape-divider-bottom-1698767906 .shape-fill {
-  fill: #FFFFFF;
-}
-/*  */
  
  /* making herosection right side img larger for smaller screens(xsm,sm,md) */
-   @media (max-width: 992px) {
+   @media (max-width: 991px) {
      #herosection_rightside_img{
       width: 100%;
+      margin-bottom: 0.8rem;
     }}
 
     /*making herosection responsive  */
-    .hero-section{
-      height: 90vh;
-    }
-
   @media (max-width: 767px) {
     .hero-section{
       height: auto;
     }
   }
+
+
+  /* 3.Service Section */
+
+  .service-section
+  {
+    height: 100vh;
+  border-bottom: 1px solid rgb(92, 92, 92);
+
+  }
+
+  .service-section-heading
+  {
+    font-size: 2.8rem;
+    color: var(--bs-main-color);
+}
+.service-section-heading:hover
+{
+  color: var(--secondary-color);
+}
+.card
+{
+  border: 0.2px solid rgb(43, 43, 43);
+  transition: all 0.3s ease;
+}
+.card:hover
+{
+  transform: scale(1.1);
+}
+.card-text
+{
+  margin: 0.5rem 0;
+}
+
+.card .card-title
+{
+  color: var(--bs-main-color);
+}
+
+.card .card-text
+{
+  color: var(--bs-primary-color);
+}
+    /*making servicesection responsive  */
+    @media (max-width: 991px) {
+      .service-section{
+        height: auto;
+      }
+
+      .service-section-heading
+      {
+        margin:2rem 0 ;
+      }
+      .card
+      {
+        margin-bottom: 0.8rem;
+      }
+    }
+
+  @media (min-width:991px) 
+  {
+    .service-section-heading
+    {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  /* 5.Contact us section */
+.Contactus-section
+{
+  height: 100vh;
+  border-bottom: 1px solid rgb(92, 92, 92);
+
+}
+.Contactus-section:hover {
+  color: var(--secondary-color);
+}
+
+.formcontainer
+{
+  max-width: 50%;
+  margin: auto;
+}
+
+@media (max-width:992px) {
+  .formcontainer
+{
+  max-width: 80%;
+
+}
+.Contactus-section
+{
+  height: auto;
+}
+}
+
+/* 6.About us section */
+
+  /* 5.Contact us section */
+  #aboutus:hover {
+    color: var(--secondary-color);
+  }
+
+
+  #aboutus
+  {
+    height:75vh;
+  }
+
+
+  @media (max-width:992px) {
+  #aboutus
+  {
+    height: auto;
+  
+  }
+
+}
