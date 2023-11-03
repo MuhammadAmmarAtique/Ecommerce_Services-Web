@@ -59,6 +59,7 @@ li{
   background-color: var(--bs-dark-primary);
 }
 
+
 .navbar-brand
 {
   color:var(--bs-main-color);
@@ -81,6 +82,10 @@ li{
   color: white;
 }
 
+.navbar{
+  position: sticky;
+  top: 0;
+}
 
 /* 2. Hero Section */
 .herosection-height{
@@ -207,7 +212,7 @@ li{
   border-bottom: 1px solid rgb(92, 92, 92);
 
 }
-.Contactus-section:hover {
+.CS-heading:hover {
   color: var(--secondary-color);
 }
 
@@ -231,15 +236,13 @@ li{
 
 /* 6.About us section */
 
-  /* 5.Contact us section */
-  #aboutus:hover {
-    color: var(--secondary-color);
-  }
 
-
+.ASheading:hover {
+  color: var(--secondary-color);
+}
   #aboutus
   {
-    height:75vh;
+    height:100vh;
   }
 
 
