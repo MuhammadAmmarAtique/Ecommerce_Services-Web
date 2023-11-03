@@ -254,3 +254,17 @@ li{
   }
 
 }
+
+
+
+/* Scrollbar styling */
+body::-webkit-scrollbar
+{
+    background-color: #313131;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: #249ae9b7;
+    border-radius: 3px;
+}
