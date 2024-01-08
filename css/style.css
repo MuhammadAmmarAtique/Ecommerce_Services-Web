@@ -237,25 +237,20 @@ li{
 /* 6.About us section */
 
 
-.ASheading:hover {
+.ASheading:hover 
+  {
   color: var(--secondary-color);
-}
+  }
   #aboutus
   {
     height:100vh;
   }
 
-
-  @media (max-width:992px) {
   #aboutus
   {
     height: auto;
   
   }
-
-}
-
-
 
 /* Scrollbar styling */
 body::-webkit-scrollbar
